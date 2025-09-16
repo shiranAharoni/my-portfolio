@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact · Shiran Aharoni</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <nav class="nav">
+      <div class="brand">
+        <span class="badge">Portfolio</span>
+        <strong>Shiran Aharoni</strong>
+      </div>
+      <div style="display:flex;gap:16px">
+        <a href="index.html">Home</a>
+        <a href="projects.html">Projects</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </nav>
+
+    <h1>Contact</h1>
+    <p class="small">Prefer email? <a href="mailto:shiran5725@gmail.com">shiran5725@gmail.com</a></p>
+
+    <div class="card">
+      <form onsubmit="event.preventDefault(); window.location='mailto:shiran5725@gmail.com?subject=Portfolio%20Contact&body='+encodeURIComponent(document.getElementById('msg').value)">
+        <label for="msg">Message</label>
+        <textarea id="msg" rows="5" placeholder="Write a short message..."></textarea>
+        <div class="form-actions" style="margin-top:10px">
+          <button class="btn" type="submit">Send</button>
+          <a class="btn secondary" href="https://github.com/ShiranAharoni" target="_blank">GitHub</a>
+        </div>
+      </form>
+    </div>
+
+    <footer>
+      © <span id="y"></span> Shiran Aharoni.
+    </footer>
+  </div>
+  <script>document.getElementById('y').textContent=new Date().getFullYear()</script>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>About · Shiran Aharoni</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <nav class="nav">
+      <div class="brand">
+        <span class="badge">Portfolio</span>
+        <strong>Shiran Aharoni</strong>
+      </div>
+      <div style="display:flex;gap:16px">
+        <a href="index.html">Home</a>
+        <a href="projects.html">Projects</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </nav>
+
+    <div class="hero" style="grid-template-columns:1fr 1fr">
+      <div>
+        <h1>About me</h1>
+        <p class="small">
+          I’m a CS student learning full‑stack development. I enjoy clean design,
+          problem solving, and turning ideas into products. This site tracks my progress.
+        </p>
+        <div style="display:flex;gap:8px;flex-wrap:wrap;margin-top:10px">
+          <span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JavaScript</span>
+          <span class="tag">Git</span><span class="tag">React (soon)</span><span class="tag">Node (soon)</span>
+        </div>
+      </div>
+      <div class="card">
+        <h3 style="margin-top:0">Resume</h3>
+        <p class="small">Download my CV:</p>
+        <a class="btn" href="resume.pdf" download>Download PDF</a>
+        <p class="small" style="margin-top:12px">Or find me on <a href="https://linkedin.com/in/shiranaharoni" target="_blank">LinkedIn</a>.</p>
+      </div>
+    </div>
+
+    <footer>
+      © <span id="y"></span> Shiran Aharoni.
+    </footer>
+  </div>
+  <script>document.getElementById('y').textContent=new Date().getFullYear()</script>
+</body>
+</html>

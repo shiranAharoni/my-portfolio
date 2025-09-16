@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Projects · Shiran Aharoni</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <nav class="nav">
+      <div class="brand">
+        <span class="badge">Portfolio</span>
+        <strong>Shiran Aharoni</strong>
+      </div>
+      <div style="display:flex;gap:16px">
+        <a href="index.html">Home</a>
+        <a href="projects.html">Projects</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </nav>
+
+    <h1>Projects</h1>
+    <p class="small">Each card includes a short description, the stack, and links to the live demo and source code.</p>
+
+    <div class="grid" id="projects"></div>
+
+    <footer>
+      © <span id="y"></span> Shiran Aharoni.
+    </footer>
+  </div>
+  <script>
+    const projects=[
+      {
+        title:"To‑Do List (sample)",
+        desc:"A basic to‑do app with add/delete and localStorage.",
+        stack:["HTML","CSS","JavaScript"],
+        live:"#",
+        code:"#",
+        image:""
+      },
+      {
+        title:"API Demo (sample)",
+        desc:"Fetch & display data from a public API.",
+        stack:["HTML","CSS","JavaScript","Fetch API"],
+        live:"#",
+        code:"#",
+        image:""
+      }
+    ];
+    const grid=document.getElementById('projects');
+    projects.forEach(p=>{
+      const card=document.createElement('div');
+      card.className='card';
+      card.innerHTML=`
+        <h3 style="margin:0 0 6px 0">${p.title}</h3>
+        <p class="small">${p.desc}</p>
+        <div style="display:flex;gap:6px;margin:10px 0;flex-wrap:wrap">
+          ${p.stack.map(s=>`<span class="tag">${s}</span>`).join('')}
+        </div>
+        <div style="display:flex;gap:12px;margin-top:10px">
+          <a class="small" href="${p.live}" target="_blank">Live</a>
+          <a class="small" href="${p.code}" target="_blank">Code</a>
+        </div>`;
+      grid.appendChild(card);
+    });
+    document.getElementById('y').textContent=new Date().getFullYear()
+  </script>
+</body>
+</html>

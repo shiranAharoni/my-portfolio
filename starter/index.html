@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Shiran Aharoni · Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <nav class="nav">
+      <div class="brand">
+        <span class="badge">Portfolio</span>
+        <strong>Shiran Aharoni</strong>
+      </div>
+      <div style="display:flex;gap:16px">
+        <a href="index.html">Home</a>
+        <a href="projects.html">Projects</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </nav>
+
+    <section class="hero">
+      <div>
+        <h1 style="font-size:40px;line-height:1.1;margin:0 0 10px 0">Full‑Stack Developer (in progress) 👋</h1>
+        <p class="small">I’m learning web development and documenting my progress. This portfolio will grow as I build more projects.</p>
+        <div style="display:flex;gap:12px;margin-top:18px">
+          <a class="btn" href="projects.html">View my projects</a>
+          <a class="btn secondary" href="https://github.com/ShiranAharoni" target="_blank">GitHub</a>
+        </div>
+        <div style="display:flex;gap:8px;margin-top:22px;flex-wrap:wrap">
+          <span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JavaScript</span><span class="tag">React (soon)</span><span class="tag">Node.js (soon)</span>
+        </div>
+      </div>
+      <div class="card">
+        <h3 style="margin-top:0">Quick Intro</h3>
+        <p>Hi! I’m Shiran. I’m studying CS and starting a full‑stack journey. I love building clean UIs and practical apps.</p>
+        <ul class="small">
+          <li>Based in: Israel</li>
+          <li>Open to: Junior roles & freelance</li>
+          <li>Contact: <a href="mailto:shiran5725@gmail.com">shiran5725@gmail.com</a></li>
+        </ul>
+      </div>
+    </section>
+
+    <section>
+      <h2 style="margin-bottom:10px">Featured projects</h2>
+      <div class="grid">
+        <div class="card">
+          <h3 style="margin:0 0 6px 0">Coming soon</h3>
+          <p class="small">As I complete projects from my course, I’ll add live demos and code links here.</p>
+        </div>
+        <div class="card">
+          <h3 style="margin:0 0 6px 0">To‑Do List (sample)</h3>
+          <p class="small">Simple task app. Replace this with your real project.</p>
+          <div style="display:flex;gap:12px;margin-top:10px">
+            <a href="#" class="small">Live</a>
+            <a href="#" class="small">Code</a>
+          </div>
+        </div>
+        <div class="card">
+          <h3 style="margin:0 0 6px 0">API Demo (sample)</h3>
+          <p class="small">Fetches data from a public API. Replace when ready.</p>
+          <div style="display:flex;gap:12px;margin-top:10px">
+            <a href="#" class="small">Live</a>
+            <a href="#" class="small">Code</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      © <span id="y"></span> Shiran Aharoni. Built with vanilla HTML/CSS. Deployed on Vercel.
+    </footer>
+  </div>
+  <script>document.getElementById('y').textContent=new Date().getFullYear()</script>
+</body>
+</html>
